@@ -166,7 +166,7 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	**Under Ringtone**
 	
 	Ring | Value
-	---- |
+	---- | ----
 	1| n=Sunrise;w=file://Sunrise.rwb;c=1
 	2| n=Sunrise;w=file://Sunrise.rwb;c=1
 	3| n=Sunrise;w=file://Sunrise.rwb;c=1
