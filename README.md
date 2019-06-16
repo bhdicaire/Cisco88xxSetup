@@ -1,23 +1,21 @@
 ![Cisco88xxSetup logo](https://github.com/bhdicaire/Cisco88xxSetup/raw/master/img/logo.png)
 
-Cisco IP Phone 8861 Setup
+You’ve been there too — setting up a new IP Phone can be an ad-hoc, manual, and time-consuming process.
 
-You’ve been there too — setting up a new computer can be an ad-hoc, manual, and time-consuming process.
+So you got your hands on a Cisco 88xx MPP Phone and now you want to get it up and running in next to no time.
 
-So you got your hands on a Cisco SPA525G or SPA525G2 and now you want to get it up and running in next to no time.
+It took too much time too setup the phone especially the firmware update. The information available online was either overly complex and/or incomplete.
 
-I wasn't happy with any of the automated setup that I came across. They were either overly complex or were missing features that I really wanted.
-
-My objective is to fully automate macOS installation and configuration using Ansible. Lots of stuff in here you probably don't need, and some that needs personalization for your system ... So feel free to fork, and customize.
+My objective is to fully document my installation and configuration with [VoIP.ms](https://VoIP.ms). Feel free to fork, and customize for your IP telephony ecosystem ...
 
 ## What problem does it solve and why is it useful?
 
-Setup a Mac up with everything configured properly with easy-to-understand instructions that automate the installation and configuration from the [bare metal](https://github.com/bhdicaire/macSetup/blob/master/doc/bareMetal.md).
+CISCO ... are great but the configuration ...
 
 ## Procedure
 
-details>
-<summary>Quick setup</summary>
+<details>
+<summary>1. Quick setup</summary>
 
  This is being accomplish with the use of [homebrew](https://github.com/Homebrew/homebrew), [homebrew-cask](https://github.com/caskroom/homebrew-cask), and the Mac Apple Store CLI [(MAS)](https://github.com/mas-cli/mas).
 
@@ -25,7 +23,7 @@ details>
 
 <details>
 
-<summary>Update the firmware</summary>
+<summary>2. Update the firmware</summary>
 1. https://www.ukvoipforums.com/viewtopic.php?f=21&t=1114
 
 CISCO 8800 SERIES XMLDEFAULT.CNF.XML FILE
@@ -34,7 +32,7 @@ https://www.cisco.com/c/en/us/support/collaboration-endpoints/ip-phone-8800-seri
 
 </details>
 <details>
-<summary>Dock Configuration</summary>
+<summary>3. SIP configuration</summary>
 Connect and Login to the SPA504G Web Based Configuration Interface
 Connect your PC to the SPA504G using its LAN side Ethernet port marked PC.
 Login to the SPA504G web interface by entering its LAN gateway IP address into your Web Browser using its DHCP assigned address (In my case, it's 192.168.1.2).
@@ -56,7 +54,12 @@ Display On Duration
 
 Display Idle Timeout
 </details>
+<details>
+<summary>4. Bluetooth configuration</summary>
 
+ This is being accomplish with the use of [homebrew](https://github.com/Homebrew/homebrew), [homebrew-cask](https://github.com/caskroom/homebrew-cask), and the Mac Apple Store CLI [(MAS)](https://github.com/mas-cli/mas).
+
+</details>
 
 ## Licence
 
