@@ -83,16 +83,20 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	
 	Item | Value
 	---- | ----
-	Change User Password| Awesome
-	Change Admin Password | Incredible
+	Change User Password| *Awesome*
+	Change Admin Password | *Incredible*
 	Phone-UI-user Mode | Yes	
 
 	**Under Power Settings:**
 
-	3. Disable Back USB Port, choose Yes
+	Item | Value
+	---- | ----
+	Disable Back USB Port| Yes
 
 	**Under IPv4 settings:**
-	1. IP mode, choose IPv4 Only
+	Item | Value
+	---- | ----
+	IP modet| IPv4 Only	
 
 	**Under Optional Network Configuration:**
 	1. Host Name: 
