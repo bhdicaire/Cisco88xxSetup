@@ -69,10 +69,12 @@ You now have successfully upgraded the firmware on your Cisco IP Phone 7800 Seri
 <br>
 1. Connect your PC to the phone using its LAN side Ethernet port marked PC, in order to use the LAN gateway IP address into your Web Browser as the phone's ip address. 
 	* You can get the Phone's IP address via the configuration menu --> 8. Status. 
+
 1. Connect and Login to the *CP-88xx-3PCC Configuration Utility*  Web Based Configuration Interface, in my case it's [192.168.168.99](http://192.168.168.99)
 	* You have to use *HTTP* for now, we'll inject a certificate later in the procedure
 	* By default, there are no **User** or **Admin** passwords required to connect and login
 	* I had issues with Google Chrome & Microsoft Edge, I recommend Safari on MacOS
+
 2. You will be landing on and viewing the "Info" page, in "Basic" view if you're not using [http://192.168.168.99/admin/advanced](http://192.168.168.99/admin/advanced)
 
 4. In the web-based utility of your IP Phone, click Voice -> System
