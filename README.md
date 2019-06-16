@@ -27,8 +27,9 @@ No default passwords are assigned to either the administrator or the user accoun
 
 <details>
 <summary>1. Quick setup</summary>
+<br>
+1. Locate the phone that you need to set up.
 
- This is being accomplish with the use of [homebrew](https://github.com/Homebrew/homebrew), [homebrew-cask](https://github.com/caskroom/homebrew-cask), and the Mac Apple Store CLI [(MAS)](https://github.com/mas-cli/mas).
 
  On the phone, press Settings > Status > Product Information, and look at the MAC address field.
  
@@ -48,8 +49,7 @@ For more information, see the Cisco IP Phone 7800 Series and Cisco IP Phone 8800
 Procedure
 Click Admin Login > Voice > System.
 In the System Configuration section, set Enable Web Server to Yes.
-To update the configuration profile, click Submit All Changes after you modify the fields in the phone web user interface.
-The phone reboots and the changes are applied.
+
 To clear all changes that you made during the current session (or after you last clicked Submit All Changes), click Undo All Changes. Values return to their previous settings.
  
 </details>
@@ -71,24 +71,26 @@ Connect your PC to the phone using its LAN side Ethernet port marked PC, in orde
 
 1. Connect and Login to the *CP-88xx-3PCC Configuration Utility*  Web Based Configuration Interface, in my case it's [192.168.168.99](http://192.168.168.99)
 	* You have to use *HTTP* for now, we'll inject a certificate later in the procedure
-	* By default, there are no User or Admin passwords required to connect and login
+	* By default, there are no **User** or **Admin** passwords required to connect and login
 	* I had issues with Google Chrome & Microsoft Edge, I recommend Safari on MacOS
 2. You will be landing on and viewing the "Info" page, in "Basic" view if you're not using [http://192.168.168.99/admin/advanced](http://192.168.168.99/admin/advanced)
 
 4. In the web-based utility of your IP Phone, click Voice > System
 
 	**Under System Configuration**
-	1. Change User and Admin Password
-	2. Phone-UI-user Mode, choose Yes
+	a. Change User and Admin passwords
+	b. Phone-UI-user Mode, choose Yes
 
 	**Under Power Settings:**
 	1. Disable Back USB Port, choose Yes
 
-**Under IPv4 settings:**
-1. IP mode, choose IPv4 Only
+	**Under IPv4 settings:**
+	1. IP mode, choose IPv4 Only
 
-**Under Optional Network Configuration:**
-1. Host Name: 
+	**Under Optional Network Configuration:**
+	1. Host Name: 
+5. To update the configuration profile, click Submit All Changes after you modify the fields in the phone web user interface.
+	* The phone reboots and the changes are applied.
 
  in the Phone-UI-User-Mode field, choose Yes. Click Submit All Changes.
 
@@ -97,7 +99,7 @@ Connect your PC to the phone using its LAN side Ethernet port marked PC, in orde
 
 
 Step 2	
-Locate the phone that you need to set up.
+
 
 Step 3	
 Navigate to the Product Specific Configuration area and set the following fields:
