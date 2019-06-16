@@ -67,7 +67,6 @@ You now have successfully upgraded the firmware on your Cisco IP Phone 7800 Seri
 <details>
 <summary>SIP configuration</summary>
 <br>
-
 1. Connect your PC to the phone using its LAN side Ethernet port marked PC, in order to use the LAN gateway IP address into your Web Browser as the phone's ip address.
 	* You can get the Phone's IP address via the configuration menu --> 8. Status. 
 
@@ -80,9 +79,9 @@ You now have successfully upgraded the firmware on your Cisco IP Phone 7800 Seri
 
 4. In the web-based utility of your IP Phone, click Voice -> System
 
-	**Under System Configuration**
-	1. Change User and Admin passwords
-	2. Phone-UI-user Mode, choose Yes
+		**Under System Configuration**
+		1. Change User and Admin passwords
+		2. Phone-UI-user Mode, choose Yes
 
 	**Under Power Settings:**
 	3. Disable Back USB Port, choose Yes
@@ -92,28 +91,11 @@ You now have successfully upgraded the firmware on your Cisco IP Phone 7800 Seri
 
 	**Under Optional Network Configuration:**
 	1. Host Name: 
-5. To update the configuration profile, click Submit All Changes after you modify the fields in the phone web user interface.
+
+
+6. Click Submit All Changes.
 	* The phone reboots and the changes are applied.
 
- in the Phone-UI-User-Mode field, choose Yes. Click Submit All Changes.
-
-
-
-
-
-Step 2	
-
-
-Step 3	
-Navigate to the Product Specific Configuration area and set the following fields:
-
-Days Display Not Active
-
-Display On Time
-
-Display On Duration
-
-Display Idle Timeout
 </details>
 <details>
 <summary>4. Bluetooth configuration</summary>
