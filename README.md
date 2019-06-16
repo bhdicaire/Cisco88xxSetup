@@ -130,7 +130,6 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	A| Phone.Dicaire.com	
 
 6. Click Submit All Changes.
-	* The phone reboots and the changes are applied.
 
 7. In the web-based utility of your IP Phone, click Voice -> Phone
 
@@ -157,8 +156,33 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	1|1| Forcepoint| Private
 	1|1| Forcepoint| Private			
 
+
+	**Under Supplementary Services**
+	
+	Item | Value
+	---- | ----
+	Cfwd All Serv | No
+
+	**Under Ringtone**
+	
+	Ring | Value
+	---- |
+	1| n=Sunrise;w=file://Sunrise.rwb;c=1
+	2| n=Sunrise;w=file://Sunrise.rwb;c=1
+	3| n=Sunrise;w=file://Sunrise.rwb;c=1
+	4| n=Sunrise;w=file://Sunrise.rwb;c=1
+	5| n=Sunrise;w=file://Sunrise.rwb;c=1
+	6| n=Sunrise;w=file://Sunrise.rwb;c=1
+	7| n=Sunrise;w=file://Sunrise.rwb;c=1
+	8| n=Sunrise;w=file://Sunrise.rwb;c=1
+	9| n=Sunrise;w=file://Sunrise.rwb;c=1
+	10| n=Sunrise;w=file://Sunrise.rwb;c=1
+		
+				
+
+
 8. Click Submit All Changes.
-	* The phone reboots and the changes are applied.
+
 
 
 </details>
