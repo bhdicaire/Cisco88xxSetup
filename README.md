@@ -26,7 +26,7 @@ No default passwords are assigned to either the administrator or the user accoun
 ## Procedure
 
 <details>
-<summary>1. Quick setup</summary>
+<summary>Quick setup</summary>
 <br>
 1. Locate the phone that you need to set up.
 
@@ -56,7 +56,7 @@ To clear all changes that you made during the current session (or after you last
 
 <details>
 
-<summary>2. Upgrade IP Phone Firmware</summary>
+<summary>Upgrade IP Phone Firmware</summary>
 1. https://www.ukvoipforums.com/viewtopic.php?f=21&t=1114
 
 CISCO 8800 SERIES XMLDEFAULT.CNF.XML FILE
@@ -65,7 +65,7 @@ https://www.cisco.com/c/en/us/support/collaboration-endpoints/ip-phone-8800-seri
 You now have successfully upgraded the firmware on your Cisco IP Phone 7800 Series or Cisco IP Phone 8800 Series Multiplatform phone through the Upgrade Rule in the web-based utility.
 </details>
 <details>
-<summary>3. SIP configuration</summary>
+<summary>SIP configuration</summary>
 <br>
 
 1. Connect your PC to the phone using its LAN side Ethernet port marked PC, in order to use the LAN gateway IP address into your Web Browser as the phone's ip address.
