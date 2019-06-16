@@ -68,6 +68,7 @@ You now have successfully upgraded the firmware on your Cisco IP Phone 7800 Seri
 <summary>SIP configuration</summary>
 <br>
 Connect your PC to the phone using its LAN side Ethernet port marked PC, in order to use the LAN gateway IP address into your Web Browser as the phone's ip address.
+
 You can get the Phone's IP address via the configuration menu --> 8. Status. 
 
 1. Connect and Login to the *CP-88xx-3PCC Configuration Utility*  Web Based Configuration Interface, in my case it's [192.168.168.99](http://192.168.168.99)
@@ -77,7 +78,7 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 
 2. You will be landing on and viewing the "Info" page, in "Basic" view if you're not using [http://192.168.168.99/admin/advanced](http://192.168.168.99/admin/advanced)
 
-4. In the web-based utility of your IP Phone, click Voice -> System
+3. In the web-based utility of your IP Phone, click Voice -> System
 
 	**Under System Configuration**
 	
@@ -97,9 +98,9 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 
 	Item | Value
 	---- | ----
-	IP modet| IPv4 Only	
+	IP Mode| IPv4 Only	
 
-	**Under Optional Network Configuration:**
+	**Under Optional Network Configuration**
 
 	Item | Value
 	---- | ----
@@ -109,9 +110,54 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	Enable LLDP-MED| No
 	Enable CDP | No		
 
+	**Under Inventory Settings**
+	
+	Item | Value
+	---- | ----
+	Host Name| Phone
+	Asset ID| Phone.Dicaire.com	
 		
+4. Click Submit All Changes.
+	* The phone reboots and the changes are applied.
+
+5. In the web-based utility of your IP Phone, click Voice -> Regional
+	**Under Time**
+	
+	Item | Value
+	---- | ----
+	Time Zone| GMT-5
+	A| Phone.Dicaire.com	
+
 6. Click Submit All Changes.
 	* The phone reboots and the changes are applied.
+
+7. In the web-based utility of your IP Phone, click Voice -> Phone
+	**Under General**
+	
+	Item | Value
+	---- | ----
+	Station Name| bhdicaire
+	Station Display Name| BH Dicaire	
+
+	**Under Handsfree**
+	
+	Item | Value
+	---- | ----
+	Bluetooth Mode| Both
+	Line| 5	
+	
+	**Under Line Key**
+	
+	Line | Ext | Short Name | Share Call
+	---- | ----|---- | ----
+	1|1| Forcepoint| Private
+	1|1| Forcepoint| Private
+	1|1| Forcepoint| Private
+	1|1| Forcepoint| Private			
+
+8. Click Submit All Changes.
+	* The phone reboots and the changes are applied.
+
 
 </details>
 <details>
