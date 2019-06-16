@@ -121,6 +121,7 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	* The phone reboots and the changes are applied.
 
 5. In the web-based utility of your IP Phone, click Voice -> Regional
+
 	**Under Time**
 	
 	Item | Value
@@ -132,6 +133,7 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	* The phone reboots and the changes are applied.
 
 7. In the web-based utility of your IP Phone, click Voice -> Phone
+
 	**Under General**
 	
 	Item | Value
