@@ -67,14 +67,12 @@ You now have successfully upgraded the firmware on your Cisco IP Phone 7800 Seri
 <details>
 <summary>3. SIP configuration</summary>
 <br>
-Connect your PC to the phone using its LAN side Ethernet port marked PC.
+Connect your PC to the phone using its LAN side Ethernet port marked PC, in order to use the LAN gateway IP address into your Web Browser as the phone's ip address. Of course, you can get the Phone's IP address via the configuration menu --> 8. Status. 
 
-1. Login to the *CP-88xx-3PCC Configuration Utility* web interface by entering its LAN gateway IP address into your Web Browser using its DHCP assigned address (In my case, it's 192.168.1.2).
+1. Connect and Login to the *CP-88xx-3PCC Configuration Utility*  Web Based Configuration Interface, in my case it's [192.168.168.99](http://192.168.168.99)
 	* By default, there are no User or Admin passwords required to connect and login
-2. You will be landing on and viewing the SPA504G "Info" page, in "Basic" view if you're not using [http://192.168.168.99/admin/advanced](http://192.168.168.99/admin/advanced)
-
-3. Connect and Login to the Phone Web Based Configuration Interface, for example 
-* I had issues with Google Chrome & Microsoft Edge, I recommend Safari on MacOS
+	* I had issues with Google Chrome & Microsoft Edge, I recommend Safari on MacOS
+2. You will be landing on and viewing the "Info" page, in "Basic" view if you're not using [http://192.168.168.99/admin/advanced](http://192.168.168.99/admin/advanced)
 
 4. In the web-based utility of your IP Phone, click Voice > System
 
