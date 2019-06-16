@@ -81,14 +81,11 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 
 	**Under System Configuration**
 	
-	Name | Rank
+	Item | Value
 	---- | ----
-	Tom Preston-Werner | Awesome
-	Albert Einstein | Nearly as awesome
-
-	
-		1. Change User and Admin passwords
-		2. Phone-UI-user Mode, choose Yes
+	Change User Password| Awesome
+	Change Admin Password | Incredible
+	Phone-UI-user Mode | Yes	
 
 	**Under Power Settings:**
 
