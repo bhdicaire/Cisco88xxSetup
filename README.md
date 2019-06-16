@@ -66,29 +66,30 @@ You now have successfully upgraded the firmware on your Cisco IP Phone 7800 Seri
 </details>
 <details>
 <summary>3. SIP configuration</summary>
-
+<br>
 Connect your PC to the phone using its LAN side Ethernet port marked PC.
 
-Login to the *CP-88xx-3PCC Configuration Utility* web interface by entering its LAN gateway IP address into your Web Browser using its DHCP assigned address (In my case, it's 192.168.1.2).
-By default, you will be landing on and viewing the SPA504G "Info" page, in "Basic" view. By default, there are no User or Admin passwords required to connect and login to the SPA504G
+1. Login to the *CP-88xx-3PCC Configuration Utility* web interface by entering its LAN gateway IP address into your Web Browser using its DHCP assigned address (In my case, it's 192.168.1.2).
 
-Connect and Login to the Phone Web Based Configuration Interface, for example http://192.168.168.99/admin/advanced
+2. By default, you will be landing on and viewing the SPA504G "Info" page, in "Basic" view. By default, there are no User or Admin passwords required to connect and login to the SPA504G
+
+3. Connect and Login to the Phone Web Based Configuration Interface, for example http://192.168.168.99/admin/advanced
 * I had issues with Google Chrome & Microsoft Edge, I recommend Safari on MacOS
-In the web-based utility of your IP Phone, click Voice > System
+
+4. In the web-based utility of your IP Phone, click Voice > System
 
 **Under System Configuration**
-1 Change User Password
-2 Change Admin Password
-3 Phone-UI-user Mode, choose Yes
+1. Change User and Admin Password
+2. Phone-UI-user Mode, choose Yes
 
 **Under Power Settings:**
 1. Disable Back USB Port, choose Yes
 
-Under IPv4 settiongs:
-* IP mode, choose IPv4 Only
+**Under IPv4 settings:**
+1. IP mode, choose IPv4 Only
 
-Under Optional Network Configuration:
-* Host Name: 
+**Under Optional Network Configuration:**
+1. Host Name: 
 
  in the Phone-UI-User-Mode field, choose Yes. Click Submit All Changes.
 
