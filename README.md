@@ -94,14 +94,22 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	Disable Back USB Port| Yes
 
 	**Under IPv4 settings:**
+
 	Item | Value
 	---- | ----
 	IP modet| IPv4 Only	
 
 	**Under Optional Network Configuration:**
-	1. Host Name: 
 
+	Item | Value
+	---- | ----
+	Host Name| Phone
+	Domain| Dicaire.com
+	Primary NTP Server| pool.ntp.org
+	Enable LLDP-MED| No
+	Enable CDP | No		
 
+		
 6. Click Submit All Changes.
 	* The phone reboots and the changes are applied.
 
