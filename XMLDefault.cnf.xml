@@ -1,0 +1,43 @@
+<Default>
+<autoRegistrationName>AUTO-REG</autoRegistrationName>
+<autoRegistration>disabled</autoRegistration>
+<selfProvisioningSecureMode>true</selfProvisioningSecureMode>
+<adminProvisionMode>false</adminProvisionMode>
+<ipAddressMode>0</ipAddressMode>
+<ipPreferenceModeControl>0</ipPreferenceModeControl>
+<ipMediaAddressFamilyPreference>0</ipMediaAddressFamilyPreference>
+<callManagerGroup>
+<name>Default</name>
+<tftpDefault>true</tftpDefault>
+<members>
+<member priority="0">
+<callManager>
+<name>cucmpub1</name>
+<description>cucmpub1</description>
+<ports>
+<ethernetPhonePort>2000</ethernetPhonePort>
+<sipPort>5060</sipPort>
+<securedSipPort>5061</securedSipPort>
+<mgcpPorts>
+<listen>2427</listen>
+<keepAlive>2428</keepAlive>
+</mgcpPorts>
+</ports>
+<processNodeName>cucmpub1</processNodeName>
+</callManager>
+</member>
+</members>
+</callManagerGroup>
+<TVS>
+<members>
+<member priority="0">
+<port>2445</port>
+<address>cucmpub1</address>
+</member>
+</members>
+</TVS>
+<loadInformation36217  model="Cisco 8811">sip88xx.11-2-3MSR1-1</loadInformation36217>
+<loadInformation683  model="Cisco 8841">sip88xx.11-2-3MSR1-1</loadInformation683>
+<loadInformation684  model="Cisco 8851">sip88xx.11-2-3MSR1-1</loadInformation684>
+<loadInformation685  model="Cisco 8861">sip88xx.11-2-3MSR1-1</loadInformation685>
+</Default>
