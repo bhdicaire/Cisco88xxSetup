@@ -178,12 +178,37 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	9| n=Sunrise;w=file://Sunrise.rwb;c=1
 	10| n=Sunrise;w=file://Sunrise.rwb;c=1
 		
-				
-
-
 8. Click Submit All Changes.
 
+7. In the web-based utility of your IP Phone, click Voice -> Ext1
 
+	**Under Share Line Appearance**
+	
+	Item | Value
+	---- | ----
+	Shared User ID| 514 
+	Station Display Name| BH Dicaire
+
+	**Under SIP Settings**
+	
+	Item | Value
+	---- | ----
+	SIP Port | 5060 
+
+	**Under Proxy and Registration s**
+
+	Item | Value
+	---- | ----
+	Proxy | 5060 
+	Register Expire| &&
+
+	**Under Subscriber Information **
+
+	Item | Value
+	---- | ----
+	Proxy | 5060 
+	Register Expire| &&
+	
 
 </details>
 <details>
