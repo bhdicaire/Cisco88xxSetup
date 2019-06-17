@@ -193,19 +193,18 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	
 	Item | Value
 	---- | ----
-
 	SIP Transport| TLS
 	SIP Port | 5060
 	Ext SIP Port | 5061			
 
-	**Under Proxy and Registration s**
+	**Under Proxy and Registration**
 
 	Item | Value
 	---- | ----
 	Proxy | Montreal6.VOIP.ms
 	Outbound Proxy | Montreal6.VOIP.ms 	
 	Register Expire| 300
-	Proxy Fallback Intvl 300	
+	Proxy Fallback Intvl|300
 	DNS SRV Auto Prefix| No
 	
 
@@ -214,18 +213,19 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	Item | Value
 	---- | ----
 	Display Name | BH Dicaire
-	User ID| xxxxxxS0
+	User ID| xxxxxx60
 	Password| Incredible
 
 	**Under Dial Plan**
 
 	Item | Value
 	---- | ----
-	Dial Plan | (911S0|310xxxx|<:1514>[2-9]xxxxxx|1[2-9]xx[2-9]xxxxxxS0|[2-9]xx[2-9]xxxxxxS0|*xx|***xxx|*xx.|[3468]11|822|0|00|4xxx|**275*x.|xxxxxxxxxxxx.)
+	Dial Plan | "(911S0|310xxxx|<:1514>[2-9]xxxxxx|1[2-9]xx[2-9]xxxxxxS0|[2-9]xx[2-9]xxxxxxS0|*xx|***xxx|*xx.|[3468]11|822|0|00|4xxx|**275*x.|xxxxxxxxxxxx.)"
 
 8. In the web-based utility of your IP Phone, click Voice -> Ext2 for Encrypted Call
 
 	**Refer to Ext1 configuration, except for the SIP Ports under SIP Settings**
+
 	Item | Value
 	---- | ----
 	SIP Port | 5061
@@ -236,6 +236,7 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 10. In the web-based utility of your IP Phone, click Voice -> Ext2 for Encrypted Call
 
 	**Refer to Ext1 configuration, except for the SIP Ports under SIP Settings**
+
 	Item | Value
 	---- | ----
 	SIP Port | 5062
@@ -244,13 +245,6 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 11. Click Submit All Changes.
 	
 12. In the web-based utility of your IP Phone, click Voice -> Ext4
-
-	**Under Share Line Appearance**
-	
-	Item | Value
-	---- | ----
-	Shared User ID| 514 xxx-xxxx
-	Station Display Name| BH Dicaire
 
 	**Under NAT Settings**
 	
@@ -263,7 +257,7 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	
 	Item | Value
 	---- | ----
-	SIPO Port | 5060
+	SIPO Port | 5063
 		
 
 	**Under Proxy and Registration s**
@@ -273,7 +267,7 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	Proxy | Montreal6.VOIP.ms
 	Outbound Proxy | Montreal6.VOIP.ms 	
 	Register Expire| 300
-Proxy Fallback Intvl 300	
+	Proxy Fallback Intvl| 300	
 	DNS SRV Auto Prefix| No
 	
 
@@ -281,10 +275,9 @@ Proxy Fallback Intvl 300
 
 	Item | Value
 	---- | ----
-	Display Name | 
-	User ID| 
+	Display Name | BH Dicaire
+	User ID| xxxxxx60
 	Password| Incredible
-
 
 	**Under Dial Plan**
 
