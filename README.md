@@ -180,41 +180,132 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 		
 8. Click Submit All Changes.
 
-7. In the web-based utility of your IP Phone, click Voice -> Ext1
+7. In the web-based utility of your IP Phone, click Voice -> Ext1 for Encrypted Call
 
-	**Under Share Line Appearance**
+	**Under NAT Settings**
 	
 	Item | Value
 	---- | ----
-	Shared User ID| 514 
-	Station Display Name| BH Dicaire
-
+	NAT Mapping Enable | Yes
+	NAT Keep Alive Enable | Yes 
+	
 	**Under SIP Settings**
 	
 	Item | Value
 	---- | ----
-	SIP Port | 5060 
+
+	SIP Transport| TLS
+	SIP Port | 5060
+	Ext SIP Port | 5061			
 
 	**Under Proxy and Registration s**
 
 	Item | Value
 	---- | ----
-	Proxy | 5060 
-	Register Expire| &&
+	Proxy | Montreal6.VOIP.ms
+	Outbound Proxy | Montreal6.VOIP.ms 	
+	Register Expire| 300
+	Proxy Fallback Intvl 300	
+	DNS SRV Auto Prefix| No
+	
 
-	**Under Subscriber Information **
+	**Under Subscriber Information**
 
 	Item | Value
 	---- | ----
-	Proxy | 5060 
-	Register Expire| &&
+	Display Name | BH Dicaire
+	User ID| xxxxxxS0
+	Password| Incredible
+
+	**Under Dial Plan**
+
+	Item | Value
+	---- | ----
+	Dial Plan | (911S0|310xxxx|<:1514>[2-9]xxxxxx|1[2-9]xx[2-9]xxxxxxS0|[2-9]xx[2-9]xxxxxxS0|*xx|***xxx|*xx.|[3468]11|822|0|00|4xxx|**275*x.|xxxxxxxxxxxx.)
+
+8. In the web-based utility of your IP Phone, click Voice -> Ext2 for Encrypted Call
+
+	**Refer to Ext1 configuration, except for the SIP Ports under SIP Settings**
+	Item | Value
+	---- | ----
+	SIP Port | 5061
+	Ext SIP Port | 5081	
+
+9. Click Submit All Changes.
+
+10. In the web-based utility of your IP Phone, click Voice -> Ext2 for Encrypted Call
+
+	**Refer to Ext1 configuration, except for the SIP Ports under SIP Settings**
+	Item | Value
+	---- | ----
+	SIP Port | 5062
+	Ext SIP Port | 42873	
+
+11. Click Submit All Changes.
+	
+12. In the web-based utility of your IP Phone, click Voice -> Ext4
+
+	**Under Share Line Appearance**
+	
+	Item | Value
+	---- | ----
+	Shared User ID| 514 xxx-xxxx
+	Station Display Name| BH Dicaire
+
+	**Under NAT Settings**
+	
+	Item | Value
+	---- | ----
+	NAT Mapping Enable | Yes
+	NAT Keep Alive Enable | Yes 
+	
+	**Under SIP Settings**
+	
+	Item | Value
+	---- | ----
+	SIPO Port | 5060
+		
+
+	**Under Proxy and Registration s**
+
+	Item | Value
+	---- | ----
+	Proxy | Montreal6.VOIP.ms
+	Outbound Proxy | Montreal6.VOIP.ms 	
+	Register Expire| 300
+Proxy Fallback Intvl 300	
+	DNS SRV Auto Prefix| No
 	
 
+	**Under Subscriber Information**
+
+	Item | Value
+	---- | ----
+	Display Name | 
+	User ID| 
+	Password| Incredible
+
+
+	**Under Dial Plan**
+
+	Item | Value
+	---- | ----
+	Dial Plan | (911S0|310xxxx|<:1514>[2-9]xxxxxx|1[2-9]xx[2-9]xxxxxxS0|[2-9]xx[2-9]xxxxxxS0|*xx|***xxx|*xx.|[3468]11|822|0|00|4xxx|**275*x.|xxxxxxxxxxxx.)
+	
 </details>
 <details>
 <summary>4. Bluetooth configuration</summary>
 
  This is being accomplish with the use of [homebrew](https://github.com/Homebrew/homebrew), [homebrew-cask](https://github.com/caskroom/homebrew-cask), and the Mac Apple Store CLI [(MAS)](https://github.com/mas-cli/mas).
+Press the Applications button on your IP Phone.
+Select 5. Bluetooth
+Change Bluetooth to ON and press Set button
+	* The phone reboots and the changes are applied.
+Press the Applications button on your IP Phone.
+Select 5. Bluetooth
+Press the scan button and then pair your phone
+
+
 
 </details>
 
@@ -229,6 +320,7 @@ References
 
 [Upgrade the Firmware on the Cisco IP Phone 7800 and 8800 Multiplatform Series through the Web Browser Command]
 (https://www.cisco.com/c/en/us/support/docs/smb/collaboration-endpoints/cisco-ip-phone-7800-series/smb5431-upgrade-the-firmware-on-the-cisco-ip-phone-7800-and-8800-mul.html?referring_site=RE&pos=3&page=https://www.cisco.com/c/en/us/support/docs/unified-communications/unified-communications-manager-callmanager/213288-upgrade-ip-phone-firmware-individually.html)
+Voip.MS configuration https://wiki.voip.ms/article/Cisco_SPA525G
 
 ## Licence
 
