@@ -4,7 +4,7 @@ You’ve been there too — setting up a new IP Phone can be an ad-hoc, manual, 
 
 So you got your hands on a [Cisco IP Phone 88xx Series with Multiplatform Firmware](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/unified-ip-phone-8800-series/datasheet-c78-738030.pdf) and now you want to get it up and running encrypted voice call with your favorite Voice-over-IP (VoIP) Service Provider.
 
-A Cisco IP Phone such as the [8861 (e.g. part # CP-8861-3PCC-K9= )](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/unified-ip-phone-8800-series/datasheet-c78-731668.pdf) supports Session Initiation Protocol (SIP) with Third-Party Call Control Setup. It's a *great* phone with a _difficult_ setup.
+A Cisco IP Phone such as the [8861 (part # CP-8861-3PCC-K9= )](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/unified-ip-phone-8800-series/datasheet-c78-731668.pdf) supports Session Initiation Protocol (SIP) with Third-Party Call Control Setup. It's a *great* phone with a _difficult_ setup.
 
 My objective is to document my configuration for encrypted calls with [VoIP.ms](https://VoIP.ms) Feel free to fork, and customize it for your IP telephony ecosystem :grin:
 
@@ -227,11 +227,11 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 
 	Item | Value
 	---- | ----
-	Dial Plan | "(911S0|310xxxx|<:1514>[2-9]xxxxxx|1[2-9]xx[2-9]xxxxxxS0|[2-9]xx[2-9]xxxxxxS0|*xx|***xxx|*xx.|[3468]11|822|0|00|4xxx|**275*x.|xxxxxxxxxxxx.)"
+	Dial Plan |` (911S0|310xxxx|<:1514>[2-9]xxxxxx|1[2-9]xx[2-9]xxxxxxS0|[2-9]xx[2-9]xxxxxxS0|*xx|***xxx|*xx.|[3468]11|822|0|00|4xxx|**275*x.|xxxxxxxxxxxx.)`
 
 8. In the web-based utility of your IP Phone, click Voice -> Ext2
 
-	**Refer to Ext1 configuration, except for the SIP Ports under SIP Settings**
+	**Refer to Ext1 configuration**
 
 	Item | Value
 	---- | ----
@@ -248,7 +248,7 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 
 10. In the web-based utility of your IP Phone, click Voice -> Ext3
 
-	**Refer to Ext1 configuration, except for the SIP Ports under SIP Settings**
+	**Refer to Ext1 configuration**
 
 	Item | Value
 	---- | ----
@@ -307,18 +307,13 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 </details>
 <details>
 <summary>Bluetooth configuration</summary>
-<br>
+
 1. Press the Applications button on your IP Phone
-
 2. Select 5. Bluetooth
-
 3. Change Bluetooth to ON and press [SET] button
 	* The phone reboots and the changes are applied
-
 4. Press the Applications button on your IP Phone
-
 5. Select 5. Bluetooth
-
 6. Press the scan button and then pair your phone
 </details>
 
