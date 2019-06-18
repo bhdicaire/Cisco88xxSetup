@@ -2,26 +2,19 @@
 
 You’ve been there too — setting up a new IP Phone can be an ad-hoc, manual, and time-consuming process.
 
-So you got your hands on a Cisco 88xx Third-Party Call Control Setup Phone and now you want to get it up and running in next to no time.
-8800 Series Multiplatform IP Phone 
-It took too much time too setup the phone especially the firmware update. The information available online was either overly complex and/or incomplete.
+So you got your hands on a [Cisco IP Phone 88xx Series with Multiplatform Firmware](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/unified-ip-phone-8800-series/datasheet-c78-738030.pdf) and now you want to get it up and running encrypted voice call with your favorite VoIP Service Provider.
 
-My objective is to fully document my installation and configuration with [VoIP.ms](https://VoIP.ms). Feel free to fork, and customize for your IP telephony ecosystem ...
+A Cisco IP Phone such as the [8861 (e.g. part # CP-8861-3PCC-K9= )](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/unified-ip-phone-8800-series/datasheet-c78-731668.pdf) supports Session Initiation Protocol (SIP) with Third-Party Call Control Setup. It's a great phone with difficult setup.
 
-The Cisco IP Phone is used as a part of a SIP network, because the phone supports Session Initiation Protocol (SIP). The Cisco IP Phone is compatible with other SIP IP PBX call control systems, such as BroadSoft, MetaSwitch, and Asterisk.
-Configuration of these systems is not described in this document. For more information, see the documentation for the SIP PBX system to which you are connecting the Cisco IP Phone.
-This document describes some common network configurations; however, your configuration can vary, depending on the type of equipment that your service provider uses.
-
+My objective is to document my configuration for encrypted calls with [VoIP.ms](https://VoIP.ms) Feel free to fork, and customize it for your IP telephony ecosystem ...
 
 ## What problem does it solve and why is it useful?
 
-CISCO ... are great but the configuration ...
+I spent too much time upgrading the phone firmware. Provisioning is typically part of high-volume, Voice-over-IP (VoIP) deployments thus most of the documentation focused on managing the phone via the call manager (Cisco Unified Communications Manager).  
 
-Phones can be provisioned to download configuration profiles or updated firmware from a remote server when they are connected to a network, when they are powered up, and at set intervals. Provisioning is typically part of high-volume, Voice-over-IP (VoIP) deployments and is limited to service providers.
-Web-Based Configuration Utility
-Your phone system administrator can allow you to view the phone statistics and modify some or all the parameters. 
+This document describes some common configurations via the Web-Based Configuration Utility and a TFTP server.
 
-No default passwords are assigned to either the administrator or the user account. Only the administrator account can assign or change passwords.
+![Cisco88xxSetup logo](https://github.com/bhdicaire/Cisco88xxSetup/raw/master/img/cisco8861.jpg)
 
 ## Procedure
 
@@ -58,6 +51,8 @@ To clear all changes that you made during the current session (or after you last
 
 <summary>Upgrade IP Phone Firmware</summary>
 1. https://www.ukvoipforums.com/viewtopic.php?f=21&t=1114
+
+Phones can be provisioned to download configuration profiles or updated firmware from a remote server when they are connected to a network, when they are powered up, and at set intervals.
 
 CISCO 8800 SERIES XMLDEFAULT.CNF.XML FILE
 
@@ -161,6 +156,7 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	Cfwd All Serv | No
 	Secure Call Serv| Yes
 	Cfwd Busy Serv| No
+	Call Pick Up Serv| No
 	Group Call Pick Up Serv| No
 	DND Serv| No
 	Cfwd All Serv| No
