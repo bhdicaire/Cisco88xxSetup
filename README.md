@@ -6,6 +6,8 @@ So you got your hands on a [Cisco IP Phone 88xx Series with Multiplatform Firmwa
 
 A Cisco IP Phone such as the [8861 (e.g. part # CP-8861-3PCC-K9= )](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/unified-ip-phone-8800-series/datasheet-c78-731668.pdf) supports Session Initiation Protocol (SIP) with Third-Party Call Control Setup. It's a *great* phone with a _difficult_ setup.
 
+![Cisco8861 image](https://github.com/bhdicaire/Cisco88xxSetup/raw/master/img/Cisco8861.jpg)
+
 My objective is to document my configuration for encrypted calls with [VoIP.ms](https://VoIP.ms) Feel free to fork, and customize it for your IP telephony ecosystem :grin:
 
 ## What problem does it solve and why is it useful?
@@ -14,9 +16,14 @@ I spent too much time upgrading the phone firmware. Provisioning is typically pa
 
 This document describes some common configurations via the Web-Based Configuration Utility and a TFTP server.
 
-![Cisco8861 image](https://github.com/bhdicaire/Cisco88xxSetup/raw/master/img/Cisco8861.jpg)
-
 ## Procedure
+
+Applicable Devices
+* IP Phone 7800 Series
+* IP Phone 8800 Series
+
+Software version
+* 11.0.1
 
 <details>
 <summary>Quick setup</summary>
@@ -324,12 +331,7 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 </details>
 
 
-Applicable Devices
-IP Phone 7800 Series
-IP Phone 8800 Series
 
-Software version
-11.0.1
 References
 
 [Upgrade the Firmware on the Cisco IP Phone 7800 and 8800 Multiplatform Series through the Web Browser Command]
