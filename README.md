@@ -225,9 +225,7 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 
 	**Dial Plan**
 
-	Item | Value
-	---- | ----
-	Dial Plan |` (911S0|310xxxx|<:1514>[2-9]xxxxxx|1[2-9]xx[2-9]xxxxxxS0|[2-9]xx[2-9]xxxxxxS0|*xx|***xxx|*xx.|[3468]11|822|0|00|4xxx|**275*x.|xxxxxxxxxxxx.)`
+  `(911S0|310xxxx|<:1514>[2-9]xxxxxx|1[2-9]xx[2-9]xxxxxxS0|[2-9]xx[2-9]xxxxxxS0|*xx|***xxx|*xx.|[3468]11|822|0|00|4xxx|**275*x.|xxxxxxxxxxxx.)`
 
 8. In the web-based utility of your IP Phone, click Voice -> Ext2
 
