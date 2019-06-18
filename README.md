@@ -77,7 +77,7 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 
 3. In the web-based utility of your IP Phone, click Voice -> System
 
-	**Under System Configuration**
+	**System Configuration**
 	
 	Item | Value
 	---- | ----
@@ -85,40 +85,40 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	Change Admin Password | *Incredible*
 	Phone-UI-user Mode | Yes	
 
-	**Under Power Settings**
+	**Power Settings**
 
 	Item | Value
 	---- | ----
 	Disable Back USB Port| Yes
 
-	**Under IPv4 settings:**
+	**IPv4 settings:**
 
 	Item | Value
 	---- | ----
 	IP Mode| IPv4 Only	
 
-	**Under Optional Network Configuration**
+	**Optional Network Configuration**
 
 	Item | Value
 	---- | ----
-	Host Name| Phone
+	Host Name| CiscoPhone
 	Domain| Dicaire.com
 	Primary NTP Server| pool.ntp.org
 	Enable LLDP-MED| No
 	Enable CDP | No		
 
-	**Under Inventory Settings**
+	**Inventory Settings**
 	
 	Item | Value
 	---- | ----
 	Asset ID| Phone.Dicaire.com	
 		
 4. Click Submit All Changes.
-	* The phone reboots and the changes are applied.
+	* The phone reboots and the changes are applied
 
 5. In the web-based utility of your IP Phone, click Voice -> Regional
 
-	**Under Time**
+	**Time**
 	
 	Item | Value
 	---- | ----
@@ -128,30 +128,30 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 
 7. In the web-based utility of your IP Phone, click Voice -> Phone
 
-	**Under General**
+	**General**
 	
 	Item | Value
 	---- | ----
 	Station Name| bhdicaire
 	Station Display Name| BH Dicaire	
 
-	**Under Handsfree**
+	**Handsfree**
 	
 	Item | Value
 	---- | ----
 	Bluetooth Mode| Both
 	Line| 7
 	
-	**Under Line Key**
+	**Line Key**
 	
 	Line | Ext | Short Name | Share Call
 	---- | ----|---- | ----
 	1|1| Office | Private
-	1|1| Office #2| Private
-	1|1| Site #2| Private
-	1|1| Site #3| Private			
+	2|1| Office #2| Private
+	4|2| Site #2| Private
+	6|3| Site #3| Private			
 
-	**Under Supplementary Services**
+	**Supplementary Services**
 	
 	Item | Value
 	---- | ----
@@ -164,7 +164,7 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	Cfwd All Serv| No
 	Call Park Serv| No
 
-	**Under Ringtone**
+	**Ringtone**
 	
 	Ring | Value
 	---- | ----
@@ -181,24 +181,16 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 		
 8. Click Submit All Changes
 
-9. In the web-based utility of your IP Phone, click Voice -> User
+7. In the web-based utility of your IP Phone, click Voice -> Ext1
 
-	**Under Supplementary Services**
-	
-	Item | Value
-	---- | ----
-	Secure Call Setting| yes
-
-7. In the web-based utility of your IP Phone, click Voice -> Ext1 for Encrypted Call
-
-	**Under NAT Settings**
+	**NAT Settings**
 	
 	Item | Value
 	---- | ----
 	NAT Mapping Enable | Yes
 	NAT Keep Alive Enable | Yes 
 	
-	**Under SIP Settings**
+	**SIP Settings**
 	
 	Item | Value
 	---- | ----
@@ -206,13 +198,13 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	SIP Port | 5060
 	Ext SIP Port | 5061		
 	
-	**Under Call Feature Settings**
+	**Call Feature Settings**
 	
 	Item | Value
 	---- | ----
 	Default ring | Mischief			
 
-	**Under Proxy and Registration**
+	**Proxy and Registration**
 
 	Item | Value
 	---- | ----
@@ -223,7 +215,7 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	DNS SRV Auto Prefix| No
 	
 
-	**Under Subscriber Information**
+	**Subscriber Information**
 
 	Item | Value
 	---- | ----
@@ -231,13 +223,13 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	User ID| xxxxxx60
 	Password| Incredible
 
-	**Under Dial Plan**
+	**Dial Plan**
 
 	Item | Value
 	---- | ----
 	Dial Plan | "(911S0|310xxxx|<:1514>[2-9]xxxxxx|1[2-9]xx[2-9]xxxxxxS0|[2-9]xx[2-9]xxxxxxS0|*xx|***xxx|*xx.|[3468]11|822|0|00|4xxx|**275*x.|xxxxxxxxxxxx.)"
 
-8. In the web-based utility of your IP Phone, click Voice -> Ext2 for Encrypted Call
+8. In the web-based utility of your IP Phone, click Voice -> Ext2
 
 	**Refer to Ext1 configuration, except for the SIP Ports under SIP Settings**
 
@@ -246,7 +238,7 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	SIP Port | 5061
 	Ext SIP Port | 5081	
 	
-	**Under Call Feature Settings**
+	**Call Feature Settings**
 	
 	Item | Value
 	---- | ----
@@ -254,7 +246,7 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 
 9. Click Submit All Changes.
 
-10. In the web-based utility of your IP Phone, click Voice -> Ext3 for Encrypted Call
+10. In the web-based utility of your IP Phone, click Voice -> Ext3
 
 	**Refer to Ext1 configuration, except for the SIP Ports under SIP Settings**
 
@@ -263,7 +255,7 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	SIP Port | 5062
 	Ext SIP Port | 42873	
 	
-	**Under Call Feature Settings**
+	**Call Feature Settings**
 	
 	Item | Value
 	---- | ----
@@ -271,23 +263,23 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 
 11. Click Submit All Changes.
 	
-12. In the web-based utility of your IP Phone, click Voice -> Ext4
+12. In the web-based utility of your IP Phone, click Voice -> Ext4 for unencrypted call
 
-	**Under NAT Settings**
+	**NAT Settings**
 	
 	Item | Value
 	---- | ----
 	NAT Mapping Enable | Yes
 	NAT Keep Alive Enable | Yes 
 	
-	**Under SIP Settings**
+	**SIP Settings**
 	
 	Item | Value
 	---- | ----
 	SIPO Port | 5063
 		
 
-	**Under Proxy and Registration s**
+	**Proxy and Registration s**
 
 	Item | Value
 	---- | ----
@@ -298,7 +290,7 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	DNS SRV Auto Prefix| No
 	
 
-	**Under Subscriber Information**
+	**Subscriber Information**
 
 	Item | Value
 	---- | ----
@@ -306,7 +298,7 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	User ID| xxxxxx60
 	Password| Incredible
 
-	**Under Dial Plan**
+	**Dial Plan**
 
 	Item | Value
 	---- | ----
@@ -317,11 +309,16 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 <summary>Bluetooth configuration</summary>
 <br>
 1. Press the Applications button on your IP Phone
+
 2. Select 5. Bluetooth
+
 3. Change Bluetooth to ON and press [SET] button
 	* The phone reboots and the changes are applied
+
 4. Press the Applications button on your IP Phone
+
 5. Select 5. Bluetooth
+
 6. Press the scan button and then pair your phone
 </details>
 
