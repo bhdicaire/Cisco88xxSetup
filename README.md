@@ -1,12 +1,12 @@
 ![Cisco8861 image](https://github.com/bhdicaire/Cisco88xxSetup/raw/master/img/Cisco8861.jpg)
 
-You’ve been there too — setting up a new IP Phone can be an ad-hoc, manual, and time-consuming process :disappointed:
+You’ve been there too — setting up a new IP Phone can be an ad-hoc, manual, and time-consuming process.
 
 So you got your hands on a [Cisco IP Phone 88xx Series with Multiplatform Firmware](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/unified-ip-phone-8800-series/datasheet-c78-738030.pdf) and now you want to get it up and running encrypted voice call with your favorite Voice-over-IP (VoIP) Service Provider.
 
 A Cisco IP Phone such as the [8861 (part # CP-8861-3PCC-K9= )](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/unified-ip-phone-8800-series/datasheet-c78-731668.pdf) supports Session Initiation Protocol (SIP) with Third-Party Call Control Setup. It's a *great* phone with a ~~difficult~~ setup.
 
-My objective is to document my configuration for encrypted calls with [VoIP.ms](https://VoIP.ms) Feel free to fork, and customize it for your IP telephony ecosystem.
+My objective is to document my configuration for encrypted calls with [VoIP.ms](https://VoIP.ms). Feel free to fork, and customize it for your IP telephony ecosystem.
 
 ## What problem does it solve and why is it useful?
 
@@ -26,6 +26,7 @@ Applicable Devices with software version 11.2.3MSR1-1
 <summary>Quick setup</summary>
 <br>
 Locate the phone that you need to set up :stuck_out_tongue_winking_eye:
+
 
 1. On the phone, press Settings > Status > Product Information
 	* Look at the MAC and IP address 
@@ -50,8 +51,9 @@ To view the phone parameters, enable the configuration profile. To make changes 
 
 <summary>Upgrade IP Phone Firmware</summary>
 1. https://www.ukvoipforums.com/viewtopic.php?f=21&t=1114
+<br>
+Phones can be provisioned to download configuration profiles or updated firmware from a TFTP server when they are powered up.
 
-Phones can be provisioned to download configuration profiles or updated firmware from a remote server when they are connected to a network, when they are powered up, and at set intervals.
 
 CISCO 8800 SERIES XMLDEFAULT.CNF.XML FILE
 
@@ -308,12 +310,15 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 6. Press the scan button and then pair your phone
 </details>
 
+## Secure voice (SRTP) call set-up
+
+Insert diagram
 
 # References
 
 1. [Upgrade the Firmware on the Cisco IP Phone 7800 and 8800 Multiplatform Series through the Web Browser Command](https://www.cisco.com/c/en/us/support/docs/smb/collaboration-endpoints/cisco-ip-phone-7800-series/smb5431-upgrade-the-firmware-on-the-cisco-ip-phone-7800-and-8800-mul.html?referring_site=RE&pos=3&page=https://www.cisco.com/c/en/us/support/docs/unified-communications/unified-communications-manager-callmanager/213288-upgrade-ip-phone-firmware-individually.html)
-2. [Voip.MS configuration](https://wiki.voip.ms/article/Cisco_SPA525G)
-
+2. [Voip.MS — sample CISCO configuration](https://wiki.voip.ms/article/Cisco_SPA525G)
+3. [VoIP.ms — Call Encryption - TLS/SRTP](https://wiki.voip.ms/article/Call_Encryption_-_TLS/SRTP)
 ## Licence
 
 Cisco88xxSetup by Benoît H. Dicaire is shared under [CC-BY-SA-4.0](https://github.com/bhdicaire/solarized/raw/master/LICENCSE). This licence is recommended by [Choose a License.com](https://choosealicense.com/) for non-software material such as documentation and media.
