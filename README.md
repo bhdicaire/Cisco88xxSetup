@@ -1,16 +1,18 @@
 ![Cisco8861 image](https://github.com/bhdicaire/Cisco88xxSetup/raw/master/img/Cisco8861.jpg)
 
-You’ve been there too — setting up a new IP Phone can be an ad-hoc, manual, and time-consuming process.
+You’ve been there too — setting up a new IP Phone can be an ad-hoc, manual, and time-consuming process :disappointed:
 
 So you got your hands on a [Cisco IP Phone 88xx Series with Multiplatform Firmware](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/unified-ip-phone-8800-series/datasheet-c78-738030.pdf) and now you want to get it up and running encrypted voice call with your favorite Voice-over-IP (VoIP) Service Provider.
 
 A Cisco IP Phone such as the [8861 (part # CP-8861-3PCC-K9= )](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/unified-ip-phone-8800-series/datasheet-c78-731668.pdf) supports Session Initiation Protocol (SIP) with Third-Party Call Control Setup. It's a *great* phone with a ~~difficult~~ setup.
 
-My objective is to document my configuration for encrypted calls with [VoIP.ms](https://VoIP.ms) Feel free to fork, and customize it for your IP telephony ecosystem :grin:
+My objective is to document my configuration for encrypted calls with [VoIP.ms](https://VoIP.ms) Feel free to fork, and customize it for your IP telephony ecosystem.
 
 ## What problem does it solve and why is it useful?
 
-I spent too much time upgrading the phone firmware. Provisioning is typically part of high-volume VoIP deployments thus most of the documentation focused on managing the phone via the call manager (Cisco Unified Communications Manager).  
+I spent too much time upgrading the phone firmware :disappointed:
+
+Provisioning is typically part of high-volume VoIP deployments thus most of the documentation focused on managing the phone via the call manager (Cisco Unified Communications Manager).  
 
 This document describes some common configurations via the Web-Based Configuration Utility and a TFTP server.
 
@@ -23,8 +25,9 @@ Applicable Devices with software version 11.2.3MSR1-1
 <details>
 <summary>Quick setup</summary>
 <br>
-1. Locate the phone that you need to set up.
-2. On the phone, press Settings > Status > Product Information
+Locate the phone that you need to set up :stuck_out_tongue_winking_eye:
+
+1. On the phone, press Settings > Status > Product Information
 	* Look at the MAC and IP address 
  
  Access the Web-Based Configuration Utility
