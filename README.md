@@ -2,19 +2,19 @@
 
 You’ve been there too — setting up a new IP Phone can be an ad-hoc, manual, and time-consuming process.
 
-So you got your hands on a [Cisco IP Phone 88xx Series with Multiplatform Firmware](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/unified-ip-phone-8800-series/datasheet-c78-738030.pdf) and now you want to get it up and running encrypted voice call with your favorite VoIP Service Provider.
+So you got your hands on a [Cisco IP Phone 88xx Series with Multiplatform Firmware](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/unified-ip-phone-8800-series/datasheet-c78-738030.pdf) and now you want to get it up and running encrypted voice call with your favorite Voice-over-IP (VoIP) Service Provider.
 
-A Cisco IP Phone such as the [8861 (e.g. part # CP-8861-3PCC-K9= )](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/unified-ip-phone-8800-series/datasheet-c78-731668.pdf) supports Session Initiation Protocol (SIP) with Third-Party Call Control Setup. It's a great phone with difficult setup.
+A Cisco IP Phone such as the [8861 (e.g. part # CP-8861-3PCC-K9= )](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/unified-ip-phone-8800-series/datasheet-c78-731668.pdf) supports Session Initiation Protocol (SIP) with Third-Party Call Control Setup. It's a *great* phone with a _difficult_ setup.
 
-My objective is to document my configuration for encrypted calls with [VoIP.ms](https://VoIP.ms) Feel free to fork, and customize it for your IP telephony ecosystem ...
+My objective is to document my configuration for encrypted calls with [VoIP.ms](https://VoIP.ms) Feel free to fork, and customize it for your IP telephony ecosystem :grin:
 
 ## What problem does it solve and why is it useful?
 
-I spent too much time upgrading the phone firmware. Provisioning is typically part of high-volume, Voice-over-IP (VoIP) deployments thus most of the documentation focused on managing the phone via the call manager (Cisco Unified Communications Manager).  
+I spent too much time upgrading the phone firmware. Provisioning is typically part of high-volume VoIP deployments thus most of the documentation focused on managing the phone via the call manager (Cisco Unified Communications Manager).  
 
 This document describes some common configurations via the Web-Based Configuration Utility and a TFTP server.
 
-![Cisco88xxSetup logo](https://github.com/bhdicaire/Cisco88xxSetup/raw/master/img/cisco8861.jpg)
+![Cisco8861 image](https://github.com/bhdicaire/Cisco88xxSetup/raw/master/img/Cisco8861.jpg)
 
 ## Procedure
 
@@ -312,19 +312,15 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	
 </details>
 <details>
-<summary>4. Bluetooth configuration</summary>
-
- This is being accomplish with the use of [homebrew](https://github.com/Homebrew/homebrew), [homebrew-cask](https://github.com/caskroom/homebrew-cask), and the Mac Apple Store CLI [(MAS)](https://github.com/mas-cli/mas).
-Press the Applications button on your IP Phone.
-Select 5. Bluetooth
-Change Bluetooth to ON and press Set button
+<summary>Bluetooth configuration</summary>
+<br>
+1. Press the Applications button on your IP Phone
+2. Select 5. Bluetooth
+3. Change Bluetooth to ON and press [SET] button
 	* The phone reboots and the changes are applied.
-Press the Applications button on your IP Phone.
-Select 5. Bluetooth
-Press the scan button and then pair your phone
-
-
-
+4. Press the Applications button on your IP Phone.
+5. Select 5. Bluetooth
+6. Press the scan button and then pair your phone
 </details>
 
 
