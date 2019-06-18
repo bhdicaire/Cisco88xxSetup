@@ -4,7 +4,7 @@ You’ve been there too — setting up a new IP Phone can be an ad-hoc, manual, 
 
 So you got your hands on a [Cisco IP Phone 88xx Series with Multiplatform Firmware](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/unified-ip-phone-8800-series/datasheet-c78-738030.pdf) and now you want to get it up and running encrypted voice call with your favorite Voice-over-IP (VoIP) Service Provider.
 
-A Cisco IP Phone such as the [8861 (part # CP-8861-3PCC-K9= )](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/unified-ip-phone-8800-series/datasheet-c78-731668.pdf) supports Session Initiation Protocol (SIP) with Third-Party Call Control Setup. It's a *great* phone with a ~~difficult~~ setup.
+A Cisco IP Phone such as the [8861 aka part# CP-8861-3PCC-K9= ](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/unified-ip-phone-8800-series/datasheet-c78-731668.pdf) supports Session Initiation Protocol (SIP) with Third-Party Call Control Setup! It's a *great* phone with a ~~difficult~~ setup.
 
 My objective is to document my configuration for encrypted calls with [VoIP.ms](https://VoIP.ms). Feel free to fork, and customize it for your IP telephony ecosystem.
 
@@ -27,9 +27,10 @@ Applicable Devices with software version 11.2.3MSR1-1
 <br>
 Locate the phone that you need to set up :stuck_out_tongue_winking_eye:
 
+No default passwords are assigned to either the administrator or the user account. 
 
-1. On the phone, press Settings > Status > Product Information
-	* Look at the MAC and IP address 
+1. On the phone, press Settings > Status > Network Status > IPv4 Status
+	* Look at current IP address
  
  Access the Web-Based Configuration Utility
  Step 1 Step 2 Step 3
@@ -54,8 +55,17 @@ To view the phone parameters, enable the configuration profile. To make changes 
 <br>
 Phones can be provisioned to download configuration profiles or updated firmware from a TFTP server when they are powered up.
 
+1. Obtain the current firmware files
+	* Download from the Cisco web Site
+2. Extract the .zip package to a folder on your computer
+3. Setup a TFTP Server on the same subnet
+	* I used the one included on macOS Mohave,  
+	* Copy all files from the firmware archive in the root directoru of the TFTP server, in my case /private/tftpboot/
+4. Modify the [XMLDefault.cnf.xml](https://github.com/bhdicaire/Cisco88xxSetup/raw/master/XMLDefault.cnf.xml)
 
-CISCO 8800 SERIES XMLDEFAULT.CNF.XML FILE
+
+
+
 
 https://www.cisco.com/c/en/us/support/collaboration-endpoints/ip-phone-8800-series-multiplatform-firmware/tsd-products-support-series-home.html
 You now have successfully upgraded the firmware on your Cisco IP Phone 7800 Series or Cisco IP Phone 8800 Series Multiplatform phone through the Upgrade Rule in the web-based utility.
@@ -67,12 +77,14 @@ Connect your PC to the phone using its LAN side Ethernet port marked PC, in orde
 
 You can get the Phone's IP address via the configuration menu --> 8. Status. 
 
-1. Connect and Login to the *CP-88xx-3PCC Configuration Utility*  Web Based Configuration Interface, in my case it's [192.168.168.99](http://192.168.168.99)
+Enter the IP address of the Cisco IP Phone in a web browser and include the admin/ extension.
+
+1. Login to the *CP-88xx-3PCC Configuration Utility* Web Based Configuration Interface with the IP address with the /admin/ extension. in your favorite web browser, in my case it's [192.168.168.99/admin](http://192.168.168.99/admin)
 	* You have to use *HTTP* for now, we'll inject a certificate later in the procedure
 	* By default, there are no **User** or **Admin** passwords required to connect and login
 	* I had issues with Google Chrome & Microsoft Edge, I recommend Safari on MacOS
 
-2. You will be landing on and viewing the "Info" page, in "Basic" view if you're not using [http://192.168.168.99/admin/advanced](http://192.168.168.99/admin/advanced)
+2. You will be landing on and viewing the "Info" page, in "Basic" view if you're not using the extension /admin/advanced/ [http://192.168.168.99/admin/advanced](http://192.168.168.99/admin/advanced)
 
 3. In the web-based utility of your IP Phone, click Voice -> System
 
@@ -310,15 +322,17 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 6. Press the scan button and then pair your phone
 </details>
 
-## Secure voice (SRTP) call set-up
+### Secure voice (SRTP) call set-up diagram
 
 Insert diagram
 
-# References
+## References
 
-1. [Upgrade the Firmware on the Cisco IP Phone 7800 and 8800 Multiplatform Series through the Web Browser Command](https://www.cisco.com/c/en/us/support/docs/smb/collaboration-endpoints/cisco-ip-phone-7800-series/smb5431-upgrade-the-firmware-on-the-cisco-ip-phone-7800-and-8800-mul.html?referring_site=RE&pos=3&page=https://www.cisco.com/c/en/us/support/docs/unified-communications/unified-communications-manager-callmanager/213288-upgrade-ip-phone-firmware-individually.html)
-2. [Voip.MS — sample CISCO configuration](https://wiki.voip.ms/article/Cisco_SPA525G)
-3. [VoIP.ms — Call Encryption - TLS/SRTP](https://wiki.voip.ms/article/Call_Encryption_-_TLS/SRTP)
+1.[CISCO 8800 SERIES XMLDEFAULT.CNF.XML FILE](https://www.ukvoipforums.com/viewtopic.php?f=21&t=1114)
+2. [UK VoIP Forums's guide for upgrading a Cisco 8811 IP Phone SIP Firmware](https://www.ukvoipforums.com/downloads/cisco-8800-series.html)
+[Upgrade the Firmware on the Cisco IP Phone 7800 and 8800 Multiplatform Series through the Web Browser Command](https://www.cisco.com/c/en/us/support/docs/smb/collaboration-endpoints/cisco-ip-phone-7800-series/smb5431-upgrade-the-firmware-on-the-cisco-ip-phone-7800-and-8800-mul.html?referring_site=RE&pos=3&page=https://www.cisco.com/c/en/us/support/docs/unified-communications/unified-communications-manager-callmanager/213288-upgrade-ip-phone-firmware-individually.html)
+2. [Voip.MS — sample CISCO phone configuration](https://wiki.voip.ms/article/Cisco_SPA525G)
+3. [VoIP.ms — Call Encryption with TLS/SRTP](https://wiki.voip.ms/article/Call_Encryption_-_TLS/SRTP)
 ## Licence
 
 Cisco88xxSetup by Benoît H. Dicaire is shared under [CC-BY-SA-4.0](https://github.com/bhdicaire/solarized/raw/master/LICENCSE). This licence is recommended by [Choose a License.com](https://choosealicense.com/) for non-software material such as documentation and media.
