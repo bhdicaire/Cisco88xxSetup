@@ -1,12 +1,10 @@
-![Cisco88xxSetup logo](https://github.com/bhdicaire/Cisco88xxSetup/raw/master/img/logo.png)
+![Cisco8861 image](https://github.com/bhdicaire/Cisco88xxSetup/raw/master/img/Cisco8861.jpg)
 
 You’ve been there too — setting up a new IP Phone can be an ad-hoc, manual, and time-consuming process.
 
 So you got your hands on a [Cisco IP Phone 88xx Series with Multiplatform Firmware](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/unified-ip-phone-8800-series/datasheet-c78-738030.pdf) and now you want to get it up and running encrypted voice call with your favorite Voice-over-IP (VoIP) Service Provider.
 
 A Cisco IP Phone such as the [8861 (e.g. part # CP-8861-3PCC-K9= )](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/unified-ip-phone-8800-series/datasheet-c78-731668.pdf) supports Session Initiation Protocol (SIP) with Third-Party Call Control Setup. It's a *great* phone with a _difficult_ setup.
-
-![Cisco8861 image](https://github.com/bhdicaire/Cisco88xxSetup/raw/master/img/Cisco8861.jpg)
 
 My objective is to document my configuration for encrypted calls with [VoIP.ms](https://VoIP.ms) Feel free to fork, and customize it for your IP telephony ecosystem :grin:
 
@@ -18,12 +16,9 @@ This document describes some common configurations via the Web-Based Configurati
 
 ## Procedure
 
-Applicable Devices
+Applicable Devices with software version 11.2.3MSR1-1
 * IP Phone 7800 Series
 * IP Phone 8800 Series
-
-Software version
-* 11.0.1
 
 <details>
 <summary>Quick setup</summary>
@@ -324,19 +319,17 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 1. Press the Applications button on your IP Phone
 2. Select 5. Bluetooth
 3. Change Bluetooth to ON and press [SET] button
-	* The phone reboots and the changes are applied.
-4. Press the Applications button on your IP Phone.
+	* The phone reboots and the changes are applied
+4. Press the Applications button on your IP Phone
 5. Select 5. Bluetooth
 6. Press the scan button and then pair your phone
 </details>
 
 
+# References
 
-References
-
-[Upgrade the Firmware on the Cisco IP Phone 7800 and 8800 Multiplatform Series through the Web Browser Command]
-(https://www.cisco.com/c/en/us/support/docs/smb/collaboration-endpoints/cisco-ip-phone-7800-series/smb5431-upgrade-the-firmware-on-the-cisco-ip-phone-7800-and-8800-mul.html?referring_site=RE&pos=3&page=https://www.cisco.com/c/en/us/support/docs/unified-communications/unified-communications-manager-callmanager/213288-upgrade-ip-phone-firmware-individually.html)
-Voip.MS configuration https://wiki.voip.ms/article/Cisco_SPA525G
+1. [Upgrade the Firmware on the Cisco IP Phone 7800 and 8800 Multiplatform Series through the Web Browser Command](https://www.cisco.com/c/en/us/support/docs/smb/collaboration-endpoints/cisco-ip-phone-7800-series/smb5431-upgrade-the-firmware-on-the-cisco-ip-phone-7800-and-8800-mul.html?referring_site=RE&pos=3&page=https://www.cisco.com/c/en/us/support/docs/unified-communications/unified-communications-manager-callmanager/213288-upgrade-ip-phone-firmware-individually.html)
+2. [Voip.MS configuration](https://wiki.voip.ms/article/Cisco_SPA525G)
 
 ## Licence
 
