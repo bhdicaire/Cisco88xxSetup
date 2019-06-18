@@ -10,7 +10,7 @@ My objective is to document my configuration for encrypted calls with [VoIP.ms](
 
 ## What problem does it solve and why is it useful?
 
-I spent too much time upgrading the phone firmware :disappointed:
+I spent too much time upgrading the phone firmware :disappointed: Cisco does not include the [XMLDefault.cnf.xml](https://github.com/bhdicaire/Cisco88xxSetup/raw/master/XMLDefault.cnf.xml) required to upgrade the firmware nor identify that you'll not be able to complete the operation without it.
 
 Provisioning is typically part of high-volume VoIP deployments thus most of the documentation focused on managing the phone via the call manager (Cisco Unified Communications Manager).  
 
@@ -51,7 +51,7 @@ To view the phone parameters, enable the configuration profile. To make changes 
 <details>
 
 <summary>Upgrade IP Phone Firmware</summary>
-1. https://www.ukvoipforums.com/viewtopic.php?f=21&t=1114
+1.
 <br>
 Phones can be provisioned to download configuration profiles or updated firmware from a TFTP server when they are powered up.
 
@@ -60,9 +60,9 @@ Phones can be provisioned to download configuration profiles or updated firmware
 2. Extract the .zip package to a folder on your computer
 3. Setup a TFTP Server on the same subnet
 	* I used the one included on macOS Mohave,  
-	* Copy all files from the firmware archive in the root directoru of the TFTP server, in my case /private/tftpboot/
-4. Modify the [XMLDefault.cnf.xml](https://github.com/bhdicaire/Cisco88xxSetup/raw/master/XMLDefault.cnf.xml)
-
+	* Copy all files from the firmware archive in the root directory of the TFTP server, in my case /private/tftpboot/
+4. Modify the [XMLDefault.cnf.xml](https://github.com/bhdicaire/Cisco88xxSetup/raw/master/XMLDefault.cnf.xml) to ensure your phone model is included (e.g Cisco 8861) and the firmware version to install (e.g. sip88xx.11-2-3MSR1-1)
+5. Copy XMLDefault.cnf.xml in the root directory of the TFTP server
 
 
 
@@ -330,6 +330,9 @@ Insert diagram
 
 1.[CISCO 8800 SERIES XMLDEFAULT.CNF.XML FILE](https://www.ukvoipforums.com/viewtopic.php?f=21&t=1114)
 2. [UK VoIP Forums's guide for upgrading a Cisco 8811 IP Phone SIP Firmware](https://www.ukvoipforums.com/downloads/cisco-8800-series.html)
+3, [SUPPORT: Cisco IP Phone 8800 Series with Multiplatform Firmware](https://www.cisco.com/c/en/us/support/collaboration-endpoints/ip-phone-8800-series-multiplatform-firmware/tsd-products-support-series-home.html)
+
+
 [Upgrade the Firmware on the Cisco IP Phone 7800 and 8800 Multiplatform Series through the Web Browser Command](https://www.cisco.com/c/en/us/support/docs/smb/collaboration-endpoints/cisco-ip-phone-7800-series/smb5431-upgrade-the-firmware-on-the-cisco-ip-phone-7800-and-8800-mul.html?referring_site=RE&pos=3&page=https://www.cisco.com/c/en/us/support/docs/unified-communications/unified-communications-manager-callmanager/213288-upgrade-ip-phone-firmware-individually.html)
 2. [Voip.MS — sample CISCO phone configuration](https://wiki.voip.ms/article/Cisco_SPA525G)
 3. [VoIP.ms — Call Encryption with TLS/SRTP](https://wiki.voip.ms/article/Call_Encryption_-_TLS/SRTP)
