@@ -88,7 +88,7 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	Change Admin Password | *Incredible*
 	Phone-UI-user Mode | Yes	
 
-	**Under Power Settings:**
+	**Under Power Settings**
 
 	Item | Value
 	---- | ----
@@ -114,7 +114,6 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	
 	Item | Value
 	---- | ----
-	Host Name| Phone
 	Asset ID| Phone.Dicaire.com	
 		
 4. Click Submit All Changes.
@@ -127,7 +126,6 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	Item | Value
 	---- | ----
 	Time Zone| GMT-5
-	A| Phone.Dicaire.com	
 
 6. Click Submit All Changes.
 
@@ -145,23 +143,28 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	Item | Value
 	---- | ----
 	Bluetooth Mode| Both
-	Line| 5	
+	Line| 7
 	
 	**Under Line Key**
 	
 	Line | Ext | Short Name | Share Call
 	---- | ----|---- | ----
-	1|1| Forcepoint| Private
-	1|1| Forcepoint| Private
-	1|1| Forcepoint| Private
-	1|1| Forcepoint| Private			
-
+	1|1| Office | Private
+	1|1| Office #2| Private
+	1|1| Site #2| Private
+	1|1| Site #3| Private			
 
 	**Under Supplementary Services**
 	
 	Item | Value
 	---- | ----
 	Cfwd All Serv | No
+	Secure Call Serv| Yes
+	Cfwd Busy Serv| No
+	Group Call Pick Up Serv| No
+	DND Serv| No
+	Cfwd All Serv| No
+	Call Park Serv| No
 
 	**Under Ringtone**
 	
@@ -178,7 +181,15 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	9| n=Sunrise;w=file://Sunrise.rwb;c=1
 	10| n=Sunrise;w=file://Sunrise.rwb;c=1
 		
-8. Click Submit All Changes.
+8. Click Submit All Changes
+
+9. In the web-based utility of your IP Phone, click Voice -> User
+
+	**Under Supplementary Services**
+	
+	Item | Value
+	---- | ----
+	Secure Call Setting| yes
 
 7. In the web-based utility of your IP Phone, click Voice -> Ext1 for Encrypted Call
 
@@ -195,14 +206,20 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	---- | ----
 	SIP Transport| TLS
 	SIP Port | 5060
-	Ext SIP Port | 5061			
+	Ext SIP Port | 5061		
+	
+	**Under Call Feature Settings**
+	
+	Item | Value
+	---- | ----
+	Default ring | Mischief			
 
 	**Under Proxy and Registration**
 
 	Item | Value
 	---- | ----
-	Proxy | Montreal6.VOIP.ms
-	Outbound Proxy | Montreal6.VOIP.ms 	
+	Proxy | Chicago3.VOIP.ms
+	Outbound Proxy | Chicago3.VOIP.ms 	
 	Register Expire| 300
 	Proxy Fallback Intvl|300
 	DNS SRV Auto Prefix| No
@@ -230,10 +247,16 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	---- | ----
 	SIP Port | 5061
 	Ext SIP Port | 5081	
+	
+	**Under Call Feature Settings**
+	
+	Item | Value
+	---- | ----
+	Default ring | Mischief	
 
 9. Click Submit All Changes.
 
-10. In the web-based utility of your IP Phone, click Voice -> Ext2 for Encrypted Call
+10. In the web-based utility of your IP Phone, click Voice -> Ext3 for Encrypted Call
 
 	**Refer to Ext1 configuration, except for the SIP Ports under SIP Settings**
 
@@ -241,6 +264,12 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	---- | ----
 	SIP Port | 5062
 	Ext SIP Port | 42873	
+	
+	**Under Call Feature Settings**
+	
+	Item | Value
+	---- | ----
+	Default ring | Ascent
 
 11. Click Submit All Changes.
 	
@@ -264,8 +293,8 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 
 	Item | Value
 	---- | ----
-	Proxy | Montreal6.VOIP.ms
-	Outbound Proxy | Montreal6.VOIP.ms 	
+	Proxy | Chicago3.VOIP.ms
+	Outbound Proxy | Chicago3.VOIP.ms 	
 	Register Expire| 300
 	Proxy Fallback Intvl| 300	
 	DNS SRV Auto Prefix| No
