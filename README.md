@@ -4,7 +4,7 @@ You’ve been there too — setting up a new IP Phone can be an ad-hoc, manual, 
 
 So you got your hands on a [Cisco IP Phone 88xx Series with Multiplatform Firmware](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/unified-ip-phone-8800-series/datasheet-c78-738030.pdf) and now you want to get it up and running encrypted voice call with your favorite Voice-over-IP (VoIP) Service Provider.
 
-A Cisco IP Phone such as the [8861 (part # CP-8861-3PCC-K9= )](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/unified-ip-phone-8800-series/datasheet-c78-731668.pdf) supports Session Initiation Protocol (SIP) with Third-Party Call Control Setup. It's a *great* phone with a _difficult_ setup.
+A Cisco IP Phone such as the [8861 (part # CP-8861-3PCC-K9= )](https://www.cisco.com/c/en/us/products/collateral/collaboration-endpoints/unified-ip-phone-8800-series/datasheet-c78-731668.pdf) supports Session Initiation Protocol (SIP) with Third-Party Call Control Setup. It's a *great* phone with a ~~difficult~~ setup.
 
 My objective is to document my configuration for encrypted calls with [VoIP.ms](https://VoIP.ms) Feel free to fork, and customize it for your IP telephony ecosystem :grin:
 
@@ -24,9 +24,8 @@ Applicable Devices with software version 11.2.3MSR1-1
 <summary>Quick setup</summary>
 <br>
 1. Locate the phone that you need to set up.
-
-
- On the phone, press Settings > Status > Product Information, and look at the MAC address field.
+2. On the phone, press Settings > Status > Product Information
+	* Look at the MAC and IP address 
  
  Access the Web-Based Configuration Utility
  Step 1 Step 2 Step 3
@@ -40,12 +39,7 @@ Step 2 Scroll to IPv4 Information. Current IP displays the IP address.
 
 Allow Web Access to the Cisco IP Phone
 To view the phone parameters, enable the configuration profile. To make changes to any of the parameters, you must be able to change the configuration profile. Your system administrator might have disabled the phone option to make the phone web user interface viewable or writable.
-For more information, see the Cisco IP Phone 7800 Series and Cisco IP Phone 8800 Series Multiplatform Phones Provisioning Guide.
-Procedure
-Click Admin Login > Voice > System.
-In the System Configuration section, set Enable Web Server to Yes.
 
-To clear all changes that you made during the current session (or after you last clicked Submit All Changes), click Undo All Changes. Values return to their previous settings.
  
 </details>
 
@@ -224,8 +218,7 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	Password| Incredible
 
 	**Dial Plan**
-
-  `(911S0|310xxxx|<:1514>[2-9]xxxxxx|1[2-9]xx[2-9]xxxxxxS0|[2-9]xx[2-9]xxxxxxS0|*xx|***xxx|*xx.|[3468]11|822|0|00|4xxx|**275*x.|xxxxxxxxxxxx.)`
+ `(911S0|310xxxx|<:1514>[2-9]xxxxxx|1[2-9]xx[2-9]xxxxxxS0|[2-9]xx[2-9]xxxxxxS0|*xx|***xxx|*xx.|[3468]11|822|0|00|4xxx|**275*x.|xxxxxxxxxxxx.)`
 
 8. In the web-based utility of your IP Phone, click Voice -> Ext2
 
@@ -297,11 +290,8 @@ You can get the Phone's IP address via the configuration menu --> 8. Status.
 	Password| Incredible
 
 	**Dial Plan**
+ `(911S0|310xxxx|<:1514>[2-9]xxxxxx|1[2-9]xx[2-9]xxxxxxS0|[2-9]xx[2-9]xxxxxxS0|*xx|***xxx|*xx.|[3468]11|822|0|00|4xxx|**275*x.|xxxxxxxxxxxx.)`
 
-	Item | Value
-	---- | ----
-	Dial Plan | (911S0|310xxxx|<:1514>[2-9]xxxxxx|1[2-9]xx[2-9]xxxxxxS0|[2-9]xx[2-9]xxxxxxS0|*xx|***xxx|*xx.|[3468]11|822|0|00|4xxx|**275*x.|xxxxxxxxxxxx.)
-	
 </details>
 <details>
 <summary>Bluetooth configuration</summary>
